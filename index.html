@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pathak Family Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <div class="welcome-text">
+            <h1>Welcome to the Pathak Family Tree</h1>
+        </div>
+        <button id="explore-btn">Explore</button>
+    </div>
+
+    <div class="tree-container">
+        <div class="tree">
+            <ul>
+                <!-- Generation 1 -->
+                <li>
+                    <div class="couple">
+                        <div class="card" data-state="initial">
+                            <strong>Kamaleswar Pathak</strong>
+                        </div>
+                        <div class="card spouse hidden">
+                            <strong>Prativa Medhi Pathak</strong>
+                            <span>(Wife)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="generation-link hidden">
+                        <div class="arrow" title="Show Next Generation">↓</div>
+                    </div>
+
+                    <!-- Generation 2 (Children) -->
+                    <ul class="children hidden">
+                        <!-- Child 1 -->
+                        <li>
+                            <div class="couple">
+                                <div class="card" data-state="initial">
+                                    <strong>Kaliza Pathak</strong>
+                                    <span>(Elder Son)</span>
+                                </div>
+                                <div class="card spouse hidden">
+                                    <strong>Dhritipurna Das</strong>
+                                    <span>(Wife)</span>
+                                </div>
+                            </div>
+                            <div class="generation-link hidden">
+                                <div class="arrow" title="Show Next Generation">↓</div>
+                            </div>
+                            <!-- Generation 3 -->
+                            <ul class="children hidden">
+                                <li>
+                                    <div class="couple">
+                                        <div class="card" data-state="initial">
+                                            <strong>Dhanvi Pathak</strong>
+                                            <span>(Daughter)</span>
+                                        </div>
+                                    </div>
+                                    <div class="end-of-line hidden">End</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Child 2 -->
+                        <li>
+                            <div class="couple">
+                                <div class="card" data-state="initial">
+                                    <strong>Pritam Pathak</strong>
+                                    <span>(Younger Son)</span>
+                                </div>
+                            </div>
+                            <div class="end-of-line hidden">End</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>This website is updating continuously for all the generations of Pathak.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
